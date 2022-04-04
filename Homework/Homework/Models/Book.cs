@@ -21,12 +21,11 @@ namespace Homework.Models
             Id = ++_idCounter;
             Code = Name[0].ToString().ToUpper() + Id;
         }
-        public Book(string name, string authorName, int pageCount)
+        public Book(string name, string authorName, int pageCount) : this()
         {
             Name = name;
             AuthorName = authorName;
             PageCount = pageCount;
         }
-
     }
 }
